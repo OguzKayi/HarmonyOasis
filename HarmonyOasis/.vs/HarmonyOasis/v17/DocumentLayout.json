@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\oguzc\\OneDrive\\Masa\u00FCst\u00FC\\HarmonyOasis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6864F81B-A67C-4B81-B121-9FF9ACB45FF7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\oguzc\\onedrive\\masa\u00FCst\u00FC\\harmonyoasis\\dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6864F81B-A67C-4B81-B121-9FF9ACB45FF7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 173,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectionStrings.cs",
+              "DocumentMoniker": "C:\\Users\\oguzc\\OneDrive\\Masa\u00FCst\u00FC\\HarmonyOasis\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\ConnectionStrings.cs",
+              "ToolTip": "C:\\Users\\oguzc\\OneDrive\\Masa\u00FCst\u00FC\\HarmonyOasis\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeToolTip": "DataAccessLayer\\ConnectionStrings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T14:08:33.01Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+.formContainer {
+    border: 1px solid white;
+    border-radius: 13px;
+    padding-bottom: 20px;
+    margin: 20px 0 0 20px;
+}
+
+.formTitle {
+    padding: 3px 0;
+    border-bottom: white 1px solid;
+}
+
+    .formTitle h3 {
+        color: white;
+        text-align: center;
+        font-size: 29pt;
+        font-family: Gabriola
+    }
+
+.formContent {
+    margin-top: 20px;
+}
+
+.pnl_fail {
+    background-color: #ff9494;
+    color: white;
+    padding: 10px;
+    margin-top: 1px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+    .pnl_fail span {
+        font-size: 13pt;
+        font-family: Calibri;
+    }
+
+.pnl_success {
+    background-color: #79ca79;
+    color: white;
+    padding: 10px;
+    margin-top: 1px;
+    border-radius: 13px;
+    border: 1px solid green;
+    text-align: center;
+}
+
+    .pnl_success span {
+        font-size: 13pt;
+        font-family: Calibri;
+    }
+
+.left {
+    float: left;
+    margin-top: 20px;
+    border-right: 1px solid white;
+    min-width: 35%;
+}
+
+.right {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 60%;
+}
+
+.row {
+    margin: 10px 0 0 30px;
+}
+
+.formtag {
+    color: white;
+    display: block;
+    margin-bottom: 12px;
+    font-family: Calibri;
+    font-size: 15pt;
+}
+
+.form_tb {
+    font-family: Calibri;
+    font-size: 13pt;
+    border-radius: 8px;
+    color: white;
+    background-color: #0C0B11;
+    outline: 1px solid white;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+    .form_tb:focus {
+        outline-color: #ffd800;
+    }
+
+.form_ddl {
+    width: 200px;
+    text-align: center;
+    font-family: Calibri;
+    font-size: 17pt;
+    border-radius: 8px;
+    color: white;
+    background-color: #0C0B11;
+    outline: 1px solid white;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+    .form_ddl:focus {
+        outline-color: #ffd800;
+    }
+
+.formbutton {
+    padding: 7px;
+    background-color: black;
+    color: white;
+    font-family: Calibri;
+    font-size: 16pt;
+    border-radius: 9px;
+    border: none;
+    outline: 1px solid white;
+    font-weight: 900;
+}
+
+    .formbutton:hover {
+        outline-color: #ffd800;
+    }
+
+.addbutton {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+    .addbutton a {
+        font-size: 16pt;
+        color: white;
+        text-decoration: none;
+    }
+
+        .addbutton a h3 {
+            border: 1px solid white;
+            padding: 3px 0;
+        }
+
+            .addbutton a h3:hover {
+                color: #bda004;
+                border: 1px solid #967f00;
+            }
+
+.tablo {
+    color: white;
+    border: 1px solid white;
+    font-family: Calibri;
+    width: 100%;
+}
+
+    .tablo tr {
+    }
+
+        .tablo tr th {
+            text-align: center;
+            border: 1px solid white;
+            border-top: none;
+            font-size: 20pt;
+            padding: 5px 40px;
+            overflow-wrap: anywhere;
+        }
+
+        .tablo tr td {
+            border: 1px solid white;
+            text-align: center;
+            padding: 5px;
+        }
+
+.TableButtonSil {
+    font-family: Calibri;
+    text-decoration: none;
+    background-color: #cf2222;
+    color: white;
+    margin: 0 1px;
+    font-weight: 600;
+    font-size: 15pt;
+    padding: 2px 5px;
+}
+
+    .TableButtonSil:hover {
+        outline: 1px solid #cf2222;
+    }
+
+.TableButtonDurum {
+    font-family: Calibri;
+    background-color: #00aaaa;
+    color: white;
+    text-decoration: none;
+    margin: 0 1px;
+    font-weight: 600;
+    font-size: 15pt;
+    padding: 2px 5px;
+}
+
+    .TableButtonDurum:hover {
+        outline: 1px solid #00aaaa;
+    }
+
+.TableButtonDuzenle {
+    font-family: Calibri;
+    background-color: #46d946;
+    color: white;
+    text-decoration: none;
+    margin: 0 1px;
+    font-weight: 600;
+    font-size: 15pt;
+    padding: 2px 5px;
+}
+
+    .TableButtonDuzenle:hover {
+        outline: 1px solid #46d946;
+    }
+
+.kontrol {
+    border: 1px solid white;
+}
+
+.kontrol1 {
+    width: 45%;
+    float: left;
+    text-align: center;
+}
+
+    .kontrol1 a {
+        color: white;
+        font-size: 16pt;
+        text-decoration: none;
+        margin-left: 10%;
+        display: block;
+        border: 1px solid white;
+        padding: 3px 0;
+        margin-top: 20px;
+    }
+
+        .kontrol1 a:hover {
+            color: #bda004;
+            border: 1px solid #967f00;
+        }
+
+.kontrol2 {
+    width: 45%;
+    float: right;
+    text-align: center;
+}
+
+    .kontrol2 a {
+        color: white;
+        font-size: 16pt;
+        text-decoration: none;
+        margin-right: 10%;
+        display: block;
+        border: 1px solid white;
+        padding: 3px 0;
+        margin-top: 20px;
+    }
+
+        .kontrol2 a:hover {
+            color: #bda004;
+            border: 1px solid #967f00;
+        }
+
+.count_row {
+    color: white;
+    width: 100%;
+    font-family: Calibri;
+    display: block;
+}
+
+.toplam-tablo {
+    text-align: center;
+    border: 1px solid white;
+    width: 29%;
+    float: left;
+    margin: 20px 0.15% 20px 3%;
+    border-radius: 12px;
+}
+
+.table_title {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    font-size: 16pt;
+}
+
+.table {
+}
+
+.columns_title {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    font-size: 13pt;
+}
+
+.leftColumn_title {
+    width: 48%;
+    margin-left: 1%;
+    float: left;
+    border-right: 1px solid white;
+}
+
+.rightColumn_title {
+    width: 48%;
+    margin-right: 1%;
+    float: right;
+    border-left: 1px solid white;
+}
+
+.columns {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    font-size: 13pt;
+}
+
+.leftColumn_content {
+    width: 48%;
+    margin-left: 1%;
+    float: left;
+    border-right: 1px solid white;
+}
+
+.rightColumn_content {
+    width: 48%;
+    margin-right: 1%;
+    float: right;
+    border-left: 1px solid white;
+}
+
+.toplam {
+    padding: 5px 0 5px 0;
+    font-size: 13pt;
+}

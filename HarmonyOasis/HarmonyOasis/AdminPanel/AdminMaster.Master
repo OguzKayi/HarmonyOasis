@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="HarmonyOasis.AdminPanel.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Harmony Oasis Admin Panel</title>
+    <link href="assets/css/Main.css" rel="stylesheet" />
+    <link href="assets/css/FormStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topMenu">
+            <div class="logo">
+                <a href="../Default.aspx">
+                    <img src="assets/img/Logo/bitanedaa.jpg" />
+                </a>
+            </div>
+            <div class="title">
+                <a href="../Default.aspx">
+                    <h2>Harmony Oasis</h2>
+                    <small>A Place Full Of Harmony And Peace</small>
+                </a>
+            </div>
+            <asp:LinkButton CssClass="cikis_btn" ID="lbtn_cikis" OnClick="lbtn_cikis_Click" runat="server">Güvenli Çıkış</asp:LinkButton>
+            <asp:Label CssClass="kullanici" ID="lbl_kullanici" runat="server"></asp:Label>
+            <div style="clear: both" runat="server"></div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="container">
+            <div class="sideMenu">
+                <a href="Default.aspx">AnaSayfa</a>
+                <a href="AdminListele.aspx">Admin Listele</a>
+                <a href="KategoriListele.aspx">Kategori Listele</a>
+                <a href="MuzisyenListele.aspx">Müzisyen Listele</a>
+                <a href="ParcaListele.aspx">Parça Listele</a>
+                <a href="UyeListele.aspx">Üye Listele</a>
+                <a href="YorumListele.aspx">Yorum Listele</a>
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </form>
+    <script src="assets/ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('ContentPlaceHolder1_tb_content');
+    </script>
+</body>
+</html>

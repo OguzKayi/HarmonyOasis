@@ -1,0 +1,711 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E56801F3-75E3-48F4-AED6-BC69488EA594}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HarmonyOasis</RootNamespace>
+    <AssemblyName>HarmonyOasis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44338</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminPanel\AdminDuzenle.aspx" />
+    <Content Include="AdminPanel\AdminEkle.aspx" />
+    <Content Include="AdminPanel\AdminGiris.aspx" />
+    <Content Include="AdminPanel\AdminListele.aspx" />
+    <Content Include="AdminPanel\assets\ckeditor\adapters\jquery.js" />
+    <Content Include="AdminPanel\assets\ckeditor\build-config.js" />
+    <Content Include="AdminPanel\assets\ckeditor\ckeditor.js" />
+    <Content Include="AdminPanel\assets\ckeditor\config.js" />
+    <Content Include="AdminPanel\assets\ckeditor\contents.css" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\af.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ar.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\az.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\bg.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\bn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\bs.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\cs.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\cy.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\da.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\de-ch.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\de.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\el.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\en-au.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\en-ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\en-gb.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\en.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\eo.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\es-mx.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\es.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\et.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\eu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\fa.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\fi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\fo.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\fr-ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\fr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\gl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\gu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\he.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\hi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\hr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\hu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\id.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\is.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\it.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ja.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ka.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\km.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ko.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ku.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\lt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\lv.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\mk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\mn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ms.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\nb.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\nl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\no.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\oc.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\pl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\pt-br.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\pt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ro.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ru.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\si.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\sk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\sl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\sq.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\sr-latn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\sr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\sv.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\th.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\tr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\tt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\ug.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\uk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\vi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\zh-cn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\lang\zh.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\az.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\en-au.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\es-mx.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\dialog\styles\dialog.css" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\icons.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\pastefromgdocs\filter\default.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\pastefromlibreoffice\filter\default.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\pastetools\filter\common.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\pastetools\filter\image.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\scayt\dialogs\dialog.css" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\az.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\en-au.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\en-ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\es-mx.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\oc.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ro.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\sr-latn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\sr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\tableselection\styles\tableselection.css" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\widget\images\handle.png" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\css\samples.css" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\img\github-top.png" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\img\header-bg.png" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\img\header-separator.png" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\img\logo.png" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\img\logo.svg" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\img\navigation-tip.png" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\index.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\js\sample.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\js\sf.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\ajax.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\api.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\appendto.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\assets\inlineall\logo.png" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\assets\sample.jpg" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\datafiltering.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\dialog\dialog.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\divreplace.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\enterkey\enterkey.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\htmlwriter\outputhtml.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\index.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\inlineall.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\inlinebycode.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\inlinetextarea.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\jquery.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\magicline\magicline.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\readonly.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\replacebyclass.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\replacebycode.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\sample.css" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\sample.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\tabindex.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\toolbar\toolbar.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\uicolor.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\uilanguages.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\wysiwygarea\fullpage.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\xhtmlstyle.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\css\fontello.css" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\index.html" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\dialog.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\dialog_ie.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\dialog_ie8.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\dialog_iequirks.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\editor.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\editor_gecko.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\editor_ie.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\editor_ie8.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\editor_iequirks.css" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\icons.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\icons_hidpi.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\arrow.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\close.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\hidpi\lock-open.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\hidpi\lock.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\hidpi\refresh.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\lock-open.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\lock.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\refresh.png" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\images\spinner.gif" />
+    <Content Include="AdminPanel\assets\ckeditor\styles.js" />
+    <Content Include="AdminPanel\assets\ckeditor\vendor\promise.js" />
+    <Content Include="AdminPanel\assets\css\FormStyle.css" />
+    <Content Include="AdminPanel\assets\css\Giris.css" />
+    <Content Include="AdminPanel\assets\css\Main.css" />
+    <Content Include="AdminPanel\assets\img\Logo\bitanedaa.jpg" />
+    <Content Include="AdminPanel\assets\img\Logo\Logo.jpg" />
+    <Content Include="AdminPanel\assets\img\Logo\YeniLogo.jpg" />
+    <Content Include="AdminPanel\assets\img\PanelGiris\AdminPanelArka.jpg" />
+    <Content Include="AdminPanel\Default.aspx" />
+    <Content Include="AdminPanel\KategoriDuzenle.aspx" />
+    <Content Include="AdminPanel\KategoriEkle.aspx" />
+    <Content Include="AdminPanel\KategoriListele.aspx" />
+    <Content Include="AdminPanel\MuzisyenDuzenle.aspx" />
+    <Content Include="AdminPanel\MuzisyenEkle.aspx" />
+    <Content Include="AdminPanel\MuzisyenListele.aspx" />
+    <Content Include="AdminPanel\ParcaDuzenle.aspx" />
+    <Content Include="AdminPanel\ParcaEkle.aspx" />
+    <Content Include="AdminPanel\ParcaListele.aspx" />
+    <Content Include="AdminPanel\UyeListele.aspx" />
+    <Content Include="AdminPanel\YorumListeKontrolYapildi.aspx" />
+    <Content Include="AdminPanel\YorumListeKontrolYapilmadi.aspx" />
+    <Content Include="AdminPanel\YorumListele.aspx" />
+    <Content Include="assets\css\form.css" />
+    <Content Include="assets\css\KullaniciGiris.css" />
+    <Content Include="assets\css\KullaniciMain.css" />
+    <Content Include="assets\img\logo\bitanedaa.jpg" />
+    <Content Include="Default.aspx" />
+    <Content Include="Kategoriicerik.aspx" />
+    <Content Include="Kategoriler.aspx" />
+    <Content Include="KullaniciGiris.aspx" />
+    <Content Include="KullaniciKayit.aspx" />
+    <Content Include="MuzisyenBiyografi.aspx" />
+    <Content Include="Muzisyenicerik.aspx" />
+    <Content Include="Muzisyenler.aspx" />
+    <Content Include="Parcaicerik.aspx" />
+    <Content Include="Profil.aspx" />
+    <Content Include="Resimler\BackGround\_4b3f50b7-a35a-4956-98f1-e6e9312ccaa9.jpg" />
+    <Content Include="Resimler\MuzisyenResimleri\none.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel\AdminDuzenle.aspx.cs">
+      <DependentUpon>AdminDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminDuzenle.aspx.designer.cs">
+      <DependentUpon>AdminDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AdminEkle.aspx.cs">
+      <DependentUpon>AdminEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminEkle.aspx.designer.cs">
+      <DependentUpon>AdminEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AdminGiris.aspx.cs">
+      <DependentUpon>AdminGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminGiris.aspx.designer.cs">
+      <DependentUpon>AdminGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AdminListele.aspx.cs">
+      <DependentUpon>AdminListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminListele.aspx.designer.cs">
+      <DependentUpon>AdminListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriEkle.aspx.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriEkle.aspx.designer.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriListele.aspx.cs">
+      <DependentUpon>KategoriListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriListele.aspx.designer.cs">
+      <DependentUpon>KategoriListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\MuzisyenDuzenle.aspx.cs">
+      <DependentUpon>MuzisyenDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\MuzisyenDuzenle.aspx.designer.cs">
+      <DependentUpon>MuzisyenDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\MuzisyenEkle.aspx.cs">
+      <DependentUpon>MuzisyenEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\MuzisyenEkle.aspx.designer.cs">
+      <DependentUpon>MuzisyenEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\MuzisyenListele.aspx.cs">
+      <DependentUpon>MuzisyenListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\MuzisyenListele.aspx.designer.cs">
+      <DependentUpon>MuzisyenListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\ParcaDuzenle.aspx.cs">
+      <DependentUpon>ParcaDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\ParcaDuzenle.aspx.designer.cs">
+      <DependentUpon>ParcaDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\ParcaEkle.aspx.cs">
+      <DependentUpon>ParcaEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\ParcaEkle.aspx.designer.cs">
+      <DependentUpon>ParcaEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\ParcaListele.aspx.cs">
+      <DependentUpon>ParcaListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\ParcaListele.aspx.designer.cs">
+      <DependentUpon>ParcaListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\UyeListele.aspx.cs">
+      <DependentUpon>UyeListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\UyeListele.aspx.designer.cs">
+      <DependentUpon>UyeListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListeKontrolYapildi.aspx.cs">
+      <DependentUpon>YorumListeKontrolYapildi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListeKontrolYapildi.aspx.designer.cs">
+      <DependentUpon>YorumListeKontrolYapildi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListeKontrolYapilmadi.aspx.cs">
+      <DependentUpon>YorumListeKontrolYapilmadi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListeKontrolYapilmadi.aspx.designer.cs">
+      <DependentUpon>YorumListeKontrolYapilmadi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListele.aspx.cs">
+      <DependentUpon>YorumListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\YorumListele.aspx.designer.cs">
+      <DependentUpon>YorumListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriicerik.aspx.cs">
+      <DependentUpon>Kategoriicerik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriicerik.aspx.designer.cs">
+      <DependentUpon>Kategoriicerik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGiris.aspx.cs">
+      <DependentUpon>KullaniciGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciGiris.aspx.designer.cs">
+      <DependentUpon>KullaniciGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciKayit.aspx.cs">
+      <DependentUpon>KullaniciKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciKayit.aspx.designer.cs">
+      <DependentUpon>KullaniciKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MuzisyenBiyografi.aspx.cs">
+      <DependentUpon>MuzisyenBiyografi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MuzisyenBiyografi.aspx.designer.cs">
+      <DependentUpon>MuzisyenBiyografi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Muzisyenicerik.aspx.cs">
+      <DependentUpon>Muzisyenicerik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Muzisyenicerik.aspx.designer.cs">
+      <DependentUpon>Muzisyenicerik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Muzisyenler.aspx.cs">
+      <DependentUpon>Muzisyenler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Muzisyenler.aspx.designer.cs">
+      <DependentUpon>Muzisyenler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Parcaicerik.aspx.cs">
+      <DependentUpon>Parcaicerik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parcaicerik.aspx.designer.cs">
+      <DependentUpon>Parcaicerik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.aspx.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profil.aspx.designer.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminPanel\AdminMaster.Master" />
+    <Content Include="Master.Master" />
+    <Content Include="AdminPanel\assets\ckeditor\bender-runner.config.json" />
+    <Content Include="AdminPanel\assets\ckeditor\CHANGES.md" />
+    <Content Include="AdminPanel\assets\ckeditor\LICENSE.md" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="AdminPanel\assets\ckeditor\plugins\scayt\README.md" />
+    <Content Include="AdminPanel\assets\ckeditor\README.md" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\assets\posteddata.php" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\old\sample_posteddata.php" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\font\config.json" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\font\fontello.eot" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
+    <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <Content Include="AdminPanel\assets\ckeditor\SECURITY.md" />
+    <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\readme.md" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{6864f81b-a67c-4b81-b121-9ff9acb45ff7}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AdminPanel\assets\img\PanelBackground\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59430</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44338/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

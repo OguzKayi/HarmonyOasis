@@ -1,0 +1,115 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0C0B11;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 400px;
+    background-color: #030712;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+}
+
+.title {
+    padding: 7px 0;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.pnl_fail {
+    background-color: #ff9494;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.pnl_success {
+    background-color: #79ca79;
+    color: white;
+    padding: 10px;
+    margin-top: 1px;
+    border-radius: 13px;
+    border: 1px solid green;
+    text-align: center;
+}
+
+.buclassaisimbulamadım {
+}
+
+    .buclassaisimbulamadım a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 2px solid #808080;
+        font-size: 16pt;
+        padding-bottom: 3px;
+        margin-top: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.a1 {
+    float: left;
+    margin-left: 85px;
+}
+
+.a2 {
+    float: right;
+    margin-right: 85px;
+}
+
+.content {
+    margin-top: 15px;
+    border-top: 1px solid white;
+}
+
+.row {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+    .row label {
+        color: white;
+        display: block;
+        font-size: 16pt;
+    }
+
+.tb {
+    margin-top: 10px;
+    color: white;
+    background-color: #030712;
+    border: none;
+    outline: 1px solid white;
+    box-sizing: border-box;
+    padding: 5px 0 5px 5px;
+    width: 90%;
+    font-size: 12pt;
+}
+
+    .tb:focus {
+        outline-color: yellow;
+    }
+
+.btn {
+    margin-top: 20px;
+    width: 90%;
+    padding: 10px 0 10px 0;
+    font-size: 18pt;
+    color: white;
+    background-color: #030712;
+    font-weight: 900;
+    font-family: Calibri;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+    .btn:hover {
+        border-color: yellow;
+    }

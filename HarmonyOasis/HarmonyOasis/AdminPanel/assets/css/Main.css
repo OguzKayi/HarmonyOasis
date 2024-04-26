@@ -1,0 +1,94 @@
+﻿*, h1, h2, h3, h4, h5, h6, img {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Calibri;
+    background-color: #0C0B11;
+}
+
+.topMenu {
+    background-color: #030712;
+}
+
+    .topMenu .logo {
+    }
+
+        .topMenu .logo a img {
+            float: left;
+            height: 100px;
+            width: 100px;
+        }
+
+    .topMenu .title {
+        margin: 15px 0 0 15px;
+        float: left;
+    }
+
+        .topMenu .title a {
+            text-decoration: none;
+            color: white;
+        }
+
+            .topMenu .title a h2 {
+                font-size: 22pt;
+            }
+
+            .topMenu .title a small {
+            }
+
+.cikis_btn {
+    color: #0712e6;
+    text-decoration: none;
+    margin: 38px 30px 0 0;
+    float: right;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+    .cikis_btn:hover {
+        color: #006186;
+        text-decoration: underline;
+    }
+
+.kullanici {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: 600;
+    margin: 33px 20px 0 0;
+    float: right;
+    color: white;
+}
+
+.sideMenu {
+    float: left;
+    width: 15%;
+    min-height: 800px;
+    background-color: #020611;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+
+    .sideMenu a {
+        text-decoration: none;
+        padding: 25px 0 10px 30px;
+        display: block;
+        border-bottom: 1px solid white;
+        padding-bottom: 25px;
+        color: white;
+        font-family: Calibri;
+        font-size: 14pt;
+    }
+
+        .sideMenu a:hover {
+            text-decoration: revert-layer;
+            color: #ffd800;
+        }
+
+.content {
+    float: left;
+    min-height: 800px;
+    width: 84%;
+    background-color: #0C0B11;
+}

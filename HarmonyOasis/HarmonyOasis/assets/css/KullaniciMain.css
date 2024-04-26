@@ -1,0 +1,107 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+    background-color: #313030;
+    background-image: url('../../resimler/background/_4b3f50b7-a35a-4956-98f1-e6e9312ccaa9.jpg');
+}
+
+.topBar {
+    background-color: #030712;
+}
+
+.topContent {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.topBar .logo {
+}
+
+    .topBar .logo a img {
+        float: left;
+        height: 100px;
+        width: 100px;
+    }
+
+.topBar .title {
+    margin: 15px 0 0 15px;
+    float: left;
+}
+
+    .topBar .title a {
+        text-decoration: none;
+        color: white;
+    }
+
+        .topBar .title a h2 {
+            font-size: 22pt;
+        }
+
+        .topBar .title a small {
+        }
+
+.girisyokPanel {
+}
+
+    .girisyokPanel a {
+        float: right;
+        border: 1px solid white;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin-top: 28px;
+        margin-right: 15px;
+        border-radius: 7px;
+        font-family: Calibri;
+    }
+
+        .girisyokPanel a:hover {
+            color: #b7b3b3;
+            border-color: #b7b3b3;
+        }
+
+.girisvarPanel {
+}
+
+    .girisvarPanel a {
+        float: right;
+        color: white;
+        margin-right: 15px;
+        border-radius: 7px;
+        font-family: Calibri;
+    }
+
+.girisyokPanel a:hover {
+    color: #b7b3b3;
+    border-color: #b7b3b3;
+}
+
+.cikis_btn {
+    text-decoration: none;
+    margin-top: 28px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.kullanici {
+    text-decoration: underline;
+    margin-top: 35px;
+    font-size: 16pt;
+}
+.kullanici:hover{
+    color:#757575;
+}
+
+.container {
+    background-color: #0C0B11;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid white;
+    min-height: 800px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

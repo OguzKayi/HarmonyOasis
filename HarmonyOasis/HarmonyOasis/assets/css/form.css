@@ -1,0 +1,372 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+.secenek {
+    width: 88%;
+    margin-left: 6%;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+    .secenek a {
+        margin: 0 8%;
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 6px;
+        font-size: 20pt;
+    }
+
+
+.form_container {
+    width: 100%;
+}
+
+.profilbilgi {
+    float: left;
+    width: 50%;
+    border-right: 1px solid white;
+}
+
+    .profilbilgi .formtag {
+        margin-left: 3%;
+        color: white;
+        font-size: 20pt;
+        width: 80%;
+    }
+
+    .profilbilgi .tb {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 90%;
+        font-size: 18pt;
+    }
+
+
+    .profilbilgi .uye_btn {
+        margin-left: 20%;
+        background-color: #0C0B11;
+        color: white;
+        border: 1px solid white;
+        font-size: 18pt;
+        font-family: Calibri;
+        font-weight: 900;
+        padding: 10px;
+        width: 60%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+        .profilbilgi .uye_btn:hover {
+            color: yellow;
+            border-color: yellow;
+        }
+
+.profilyorum {
+    margin-top: 30px;
+    margin-right: 1%;
+    float: right;
+    height: 300px;
+    width: 45%;
+}
+
+.profilYorumBilgi {
+    color: white;
+    margin-left: 5%;
+}
+
+.profilYorumIcerik {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 0;
+    margin-left: 5%;
+    width: 90%;
+}
+
+    .profilYorumIcerik label {
+        overflow-wrap: break-word;
+    }
+
+.yorumSecenek {
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom:10px;
+}
+
+    .yorumSecenek a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .yorumSecenek a:hover {
+            color: yellow;
+        }
+
+.row {
+    margin: 20px 0 0 20px;
+}
+
+
+.pnl_fail {
+    background-color: #ff9494;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.pnl_success {
+    background-color: #79ca79;
+    color: white;
+    padding: 10px;
+    margin-top: 1px;
+    border-radius: 13px;
+    border: 1px solid green;
+    text-align: center;
+}
+
+.formtitle {
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+    .formtitle h2 {
+        font-family: Gabriola;
+        color: white;
+        font-size: 26pt;
+    }
+
+.formcontent {
+}
+
+.formListContent {
+    text-align: center;
+}
+
+.muzisyenliste {
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 30px 0 10px 0;
+    width: 60%;
+    margin-left: 20%;
+}
+
+    .muzisyenliste .isim {
+        padding-bottom: 5px;
+        color: white;
+    }
+
+        .muzisyenliste .isim a {
+            color: white;
+        }
+
+            .muzisyenliste .isim a:hover {
+                color: #858586;
+            }
+
+    .muzisyenliste img {
+        width: 70%;
+    }
+
+.muzisyen {
+    margin: 10px 10px 30px 10px;
+}
+
+.resim {
+    margin-left: 35%;
+    width: 30%;
+    text-align: center;
+}
+
+    .resim img {
+        width: 100%;
+    }
+
+.devami a {
+    margin-left: 7%;
+    color: #0543b2;
+}
+
+    .devami a:hover {
+        color: #287eb6;
+    }
+
+.baslik {
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    border-bottom: 1px solid white;
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.ozet {
+    color: white;
+    font-size: 13pt;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 30px;
+}
+
+.biyografi {
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 10px;
+}
+
+.kategoriliste {
+    color: white;
+    margin: 10px 0 15px 25px;
+}
+
+    .kategoriliste label {
+        color: #8b8b8b;
+    }
+
+    .kategoriliste a {
+        font-size: 18pt;
+        color: white;
+        font-family: Gabriola;
+        text-decoration: none;
+    }
+
+.parca {
+    color: white;
+    margin-left: 7%;
+    margin-top: 20px;
+}
+
+    .parca a {
+        color: white;
+        font-size: 18pt;
+    }
+
+        .parca a:hover {
+            color: #9d9d9d;
+        }
+
+        .parca a h4 {
+        }
+
+    .parca label {
+        color: #9d9d9d;
+    }
+
+.yorumPaneli {
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+    .yorumPaneli .yorumtitle {
+        font-size: 20pt;
+    }
+
+    .yorumPaneli .yorumBilgi {
+        font-size: 18pt;
+        margin-bottom: 10px;
+    }
+
+    .yorumPaneli .yorumIcerik textarea {
+        min-width: 40%;
+        min-height: 100px;
+        border: 1px solid white;
+        background-color: #0C0B11;
+        color: white;
+        font-size: 18pt;
+    }
+
+    .yorumPaneli .yorumEkle .yorum_btn {
+        margin-top: 15px;
+        color: white;
+        background-color: #0C0B11;
+        border: 1px solid white;
+        font-size: 18pt;
+        padding: 7px;
+    }
+
+        .yorumPaneli .yorumEkle .yorum_btn:hover {
+            color: #b0b04b;
+            background-color: #0C0B11;
+            border-color: #b0b04b;
+        }
+
+.yorumListe {
+    margin-top: 20px;
+    border: 1px solid white;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 15px;
+}
+
+    .yorumListe .yorumlisteBilgi {
+        border-bottom: 1px solid white;
+        width: 70%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 15%;
+    }
+
+        .yorumListe .yorumlisteBilgi label {
+        }
+
+    .yorumListe .yorumlisteIcerik {
+        min-height: 40px;
+        font-size: 18pt;
+        margin-left: 15%;
+        margin-bottom: 15px;
+        width: 70%;
+        border: 1px solid white;
+        text-align: left;
+        padding: 10px 5px 5px 10px;
+        overflow-wrap: break-word;
+    }
+
+        .yorumListe.yorumlisteIcerik label {
+            width: 100%;
+        }
+
+.parcaicerik {
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 15%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+    .parcaicerik .parcaBaslik {
+        font-size: 24pt;
+        font-family: Gabriola;
+    }
+
+    .parcaicerik .bilgi {
+        font-family: Gabriola;
+    }
+
+        .parcaicerik .bilgi label {
+            font-size: 20pt;
+        }
+
+    .parcaicerik .nota {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+        .parcaicerik .nota img {
+            width: 100%;
+        }
